@@ -1,0 +1,33 @@
+body{
+    background-color:#dbdbdb;
+    text-align: center;
+    @font-face {
+        font-family: semteulche;
+        src: url(semteulche-Light.otf);
+    }
+    @font-face {
+        font-family: DungGeunMo;
+        src: url(DungGeunMo.otf);
+    }
+}
+h1,h2{
+    font-family: DungGeunMo;
+    color: #1F0E6A;
+}
+
+.contents{
+    font-family: semteulche;
+    display: flex;
+    justify-content: center;
+    
+    background-color: #1F0E6A;
+    width: 70vw;
+}
+
+.contents > div{
+    font-family: semteulche;
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 24px;
+}
