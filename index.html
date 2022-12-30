@@ -7,16 +7,43 @@
 </head>
 <body>
 <!-- starts to do stuff here-->
-<h1>배고픈 깜아기의 둥지</h1>
-<h2>hungrycrow's nest</h2>
-<p>cs projects, illustration, back up studies, secret</p>
+<script src="index.js"></script> 
+<h1>Jiyeon Jung</h1>
+<h2>배고픕니다</h2>
 
 <div class="contents">
-    <div style="flex-grow: 1">projects</div>
-    <div style="flex-grow: 1">back up studies</div>
-    <div style="flex-grow: 1">illustration</div> 
-    <div style="flex-grow: 1"> others</div> 
+    <button class="tablink" onclick="openTab('projects', this, 'red')" id="defaultOpen">Projects</button>
+    <button class="tablink" onclick="openTab('games', this, 'green')">Games</button>
+    <button class="tablink" onclick="openTab('arts', this, 'blue')">Arts</button>
+    <button class="tablink" onclick="openTab('about', this, 'orange')">About</button>
+
+    <div id="projects" class="tabcontent">
+        <h1>Projects</h1>
+        <p>Projects </p>
+    </div>
+    
+    <div id="games" class="tabcontent">
+        <h1>Games</h1>
+        <p>Games</p> 
+    </div>
+    
+    <div id="arts" class="tabcontent">
+        <h1>Arts</h1>
+        <p>Arts</p>
+    </div>
+    
+    <div id="about" class="tabcontent">
+        <h1>About</h1>
+        <p>About</p>
+    </div>
+    
+    <script>
+        document.getElementById("defaultOpen").click();
+    </script>
+
+
+    
 </div>
-<button> open page </button>
+
 </body>
 </html>

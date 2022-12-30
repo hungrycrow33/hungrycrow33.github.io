@@ -1,5 +1,5 @@
 body{
-    background-color:#dbdbdb;
+    background-color:#ffffff;
     text-align: center;
     @font-face {
         font-family: semteulche;
@@ -16,18 +16,55 @@ h1,h2{
 }
 
 .contents{
+    width: 80vw;
+    margin-left: 10vw;
+    text-align: center;
     font-family: semteulche;
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    background-color: #433b6c;
     
-    background-color: #1F0E6A;
-    width: 70vw;
 }
 
 .contents > div{
     font-family: semteulche;
+    font-size: 24px;
     background-color: #f1f1f1;
     margin: 10px;
-    padding: 20px;
-    font-size: 24px;
+    padding: 50px;/* 20px; */
+    
 }
+
+#projects {background-color:red;}
+#games {background-color:green;}
+#arts {background-color:blue;}
+#about {background-color:orange;}
+
+.tablink {
+    font-family: DungGeunMo; 
+    background-color: rgb(193, 193, 193);
+    color: rgb(0, 0, 0);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+  .tablink:hover {
+    background-color: #777;
+    font-size: 24px;
+    
+  }
+  /* Style the tab content */
+.tabcontent{
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+    height: 70vh;
+  }
+
+ 
