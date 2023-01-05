@@ -1,0 +1,3 @@
+[submodule "jumpingGame"]
+	path = jumpingGame
+	url = git@github.com:hungrycrow33/jumpingGame.git
