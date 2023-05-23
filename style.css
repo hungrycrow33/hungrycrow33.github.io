@@ -1,5 +1,4 @@
 body{
-    /* background-color:#faf0e1; */
     text-align: center;
     @font-face {
         font-family: semteulche;
@@ -12,9 +11,7 @@ body{
 }
 .header{
     top: 0;
-    /* position: fixed; */
     width: 100vw;
-    /* height:30vh; */
     background-color:#ffffff;
 }
 h1{
@@ -48,23 +45,10 @@ h1{
 }
 
 .contents > div{
-    /* font-family: semteulche; */
     font-size: 24px;
-    /* background-color: #f1f1f1; */
-    /* margin: 10px; */
-    /* padding: 50px;20px; */
-    
 }
 
-/* #projects {background-color:red;}
-#games {background-color:green;}
-#arts {background-color:blue;}
-#about {background-color:orange;} */
-
 .tablink {
-    /* font-family: DungGeunMo;  */
-    /* background-color: rgb(193, 193, 193); */
-    /* color: rgb(0, 0, 0); */
     float: left;
     border: none;
     outline: none;
@@ -74,11 +58,8 @@ h1{
     width: calc(100% / 3);
 }
 .tab{
-    /* padding:0px; */
     width:100%;
-    /* margin-left: 1vw; */
     position: 30vh;
-    /* position: fixed; */
 }
 /* .tablink:hover {
     /* background-color: #777; 
@@ -89,13 +70,10 @@ h1{
 .tabcontent{
     color: white;
     display: none;
-    /* padding-top: 20px; */
-    
     text-align: center;
     height: 70vh;
 }
 .explain{
-    /* text-align: center; */
     padding-top: 48px;
 }
 
@@ -118,7 +96,6 @@ h1{
     width:90%;
 }
 .colors > img{
-    /* text-align: left; */
     width: 30%;
     margin:5px;
     text-align: center;
@@ -129,10 +106,6 @@ h1{
     flex-direction: row;
     justify-content: center;
 }
-/* .logo{
-    /* display: flex; 
-    
-} */
 .logo{
     display: flex;
     
@@ -174,7 +147,6 @@ a{
     font-size: 24px;
     font-weight: bold;
     font-family:Helvetica, sans-serif;
-    /* text-align: left; */
 }
 .middletitle{
     color:black;
