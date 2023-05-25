@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- useually load some stuff here -->
-<link rel="stylesheet" href="style.css">
-<title>JiyeonJung Portfolio</title>
-</head>
+    <link rel="stylesheet" href="style.css">
+    <title>JiyeonJung Portfolio</title>
+    </head>
 <body>
-<!-- starts to do stuff here-->
 <script src="index.js"></script> 
 <div class="header">
-    <h1>Jiyeon Jung</h1>
+    <div id="profile-name">
+        <img id="profilepic" src="./images/myface.png">
+        <h1>Jiyeon Jung</h1>
+    </div>
     <p id="intro">An aspiring Web Developer and UI/UX Designer, I am dedicated to creating engaging user experiences. </br> Eager to learn and grow, I am on a journey to become a skilled professional in the field!<br/>
-    </br> <a href="https://www.linkedin.com/in/jiyeon-jung-2116ab203" target="_blank">LinkedIn</a> &nbsp;  
+    </br> 
+    <a href="./resume/JIYEON_JUNG_Resume.pdf" target="_blank">Resume</a> &nbsp;  
+     <a href="https://www.linkedin.com/in/jiyeon-jung-2116ab203" target="_blank">LinkedIn</a> &nbsp;  
   <a href="https://github.com/hungrycrow33" target="_blank">GitHub</a>   
 </p>
-
-
-
-<!-- <button onclick="window.location.href='./jumpingGame/jump.html';"> hi </button> -->
-
-   
 </div>
     <div class="contents">
         <div class="tab">
-            <button class="tablink" onclick="openTab('projects', this, 'green')" id="defaultOpen">Projects</button>
-            <button class="tablink" onclick="openTab('design', this, 'green')">Desgin Works</button>
-            <button class="tablink" onclick="openTab('illustrations', this, 'blue')">Illustration</button>
-            <!-- <button class="tablink" onclick="openTab('about', this, 'orange')">About</button> -->
+            <button class="tablink" onclick="openTab('projects', this)" id="defaultOpen">Projects</button>
+            <button class="tablink" onclick="openTab('design', this)">Desgin Works</button>
+            <button class="tablink" onclick="openTab('illustrations', this)">Illustration</button>
+            <button class="tablink" onclick="openTab('game', this)">Game</button>
+            <!-- <button class="tablink" onclick="openTab('about', this)">About</button> -->
         </div>
     <div id="projects" class="tabcontent">
         <div class="explain">
             <p class="title">2021 Redistricting Gerrymandering Analysis Project</p>
-           
+            <p class="middletitle">UI/UX, Front-end Developer</p>
             <p class="text">During the final capstone project in CSE416, I designed and implemented a data visualization web application to analyze gerrymandering in 2021 Redistricting plans. Our team collaborated and discussed how to utilize population, demographic, and map data to determine whether a redistricting plan is biased. </p>
             <p class="text">As a front-end developer:</p>
             <ul>
@@ -44,7 +42,7 @@
         </div>
         <a href="https://github.com/CSE416" target="_blank">GitHub Repository for the project</a>
        
-        <img id="map" src="./images/map1.png">
+        <img id="map" src="./images/project/map1.png">
         <!-- <img class="other" src="./images/map2.png"> -->
     </div>
     
@@ -56,22 +54,22 @@
         </div>
        <div class="logo">
         <div id="first">
-            <img id="podlogo" src="./images/samplesPod/logo.png">
+            <img id="podlogo" src="./images/design/samplesPod/logo.png">
         </div>
         <div id="second">
-            <img src="./images/samplesPod/ppt2.png">
-             <img src="./images/samplesPod/ppt4.png">
+            <img src="./images/design/samplesPod/ppt2.png">
+             <img src="./images/design/samplesPod/ppt4.png">
         </div>
        </div>
          <p class="text"><b>Colors:</b> I utilized a "Retro style" color palette to evoke a sense of nostalgia and convey an atmosphere of the past, aiming to evoke a feeling of history and nostalgia.</p>
          <p class="text"><b>Design:</b>  To signify that it is an archive, I used a "zip" icon, symbolizing compression and storage. Also, the shape of a cassette tape to evoke a vintage aesthetic.</p>
-       <img class="other" src="./images/samplesPod/ppt3.png">
+       <img class="other" src="./images/design/samplesPod/ppt3.png">
        <div class="explain">
          <p class="middletitle">2. Logo for Game Development Team 'Coco Eclipse'</p>
         <p class="text">I developed a logo for a game development team called "Coco Eclipse." To align with the team name, I used a coconut shape as the foundation and added a crescent shape on top to represent the "eclipse" effect happening over the coconut. </p>
         <p class="text">For the color scheme, I opted for neon green and black to give a cyberpunk, arcade atmosphere that aligns with the type of games the team aims to develop. Additionally, I added a cute face resembling a coconut hole, which reflects the team's personality.</p>
     </div>
-    <img class="big" src="./images/logo.png">
+    <img class="big" src="./images/design/logo.png">
     <div class="blank"></div>
         
     </div>
@@ -83,28 +81,33 @@
         </div>
         
         <div class="colors">
-            <img src="./images/color1.png">
-            <img src="./images/color7.png">
+            <img src="./images/illustration/color1.png">
+            <img src="./images/illustration/color7.png">
         </div>
         <div class="colors">
-            <img src="./images/color3.JPG">
-            <img src="./images/color4.JPG">
+            <img src="./images/illustration/color3.JPG">
+            <img src="./images/illustration/color4.JPG">
         </div>
         <div class="explain">
             <p class="title">Color Combination Work</p>
             <p class="text">These are some examples of color combination works where I experimented with various combinations to enhance aesthetics and create visually pleasing compositions. Starting with original photos on the left, I explored different color schemes, including triadic and complementary palettes, to bring harmony and balance to the images.</p>
         </div>
         <p class="simpletitle">Triadic Color Palette</p>
-        <img class="other" src="./images/color5.jpg">
+        <img class="other" src="./images/illustration/color5.jpg">
         <p class="simpletitle">Complementary Color Palette</p>
-        <img class="other" src="./images/color6.jpg">
+        <img class="other" src="./images/illustration/color6.jpg">
         <div class="blank"></div>
     </div>
     
-    <!-- <div id="about" class="tabcontent">
-        <h1>About</h1>
-        
-    </div> -->
+    <div id="game" class="tabcontent">
+        <div class="explain">
+            <p class="title">Endless Runner Game</p>
+            <p class="text">I developed an endless runner game to explore the principles of game design and gain a deeper understanding of its mechanics. Using JavaScript, I leveraged the power of canvas for responsive graphics and utilized CSS to enhance the overall visual experience. The process presented unique challenges that allowed me to further develop my skills and knowledge in game development.</p>
+        </div>
+        <button id="gameplay" onclick="window.location.href='./jumpingGame/jump.html';"> Play Endless Runner Game </button>
+        <p class="text"></br>Below is an example image showcasing the gameplay of the game. <span>&#9660;</span></p> 
+        <img class="big" src="./images/game/gamescreen.png">
+         </div>
     
     <script>
         document.getElementById("defaultOpen").click();

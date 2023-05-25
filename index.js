@@ -1,4 +1,4 @@
-function openTab(item,element,color) {
+function openTab(item,element) {
     var i, tabcontent, tablinks;
     // erase all the contents before (so the selected one can be shown)
     tabcontent = document.getElementsByClassName("tabcontent");
