@@ -1,0 +1,136 @@
+:root {
+    --margin: 96px;
+    --gutter: 24px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.top-nav {
+    position: sticky;
+    top: 0;
+    height: 32px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 var(--margin);
+    z-index: 1000;
+}
+
+.navigation-text a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.side-nav{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.main-content {
+    margin: 48px var(--margin) 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--gutter);
+}
+
+.left-column {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* This ensures content starts from the top */
+    text-align: center; /* This centers any text content */
+}
+
+.right-column {
+    grid-column: span 9;
+    max-height: calc(100vh - 32px - 48px);
+    overflow-y: auto;
+}
+.card {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: var(--gutter);
+    margin-bottom: 24px; /* Add space between multiple case-containers if needed */
+    
+    border-radius: 8px;
+  transition: 0.3s;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+.case-img{
+    grid-column: span 5;
+}
+.case-img img{
+    width:100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+}
+.case-info {
+    grid-column: span 4;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.6em;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    border-radius: 0.25rem;
+    background-color: #f0f0f0;
+    color: #333;
+}
+#profilepic {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover; /* This ensures the image covers the area without distortion */
+    object-position: center; /* This centers the image within its container */
+}
+
+.pl-12{
+    padding-left: 12px;
+}
+.pr-12{
+    padding-right: 12px;
+}
+.pl-4{
+    padding-left: 4px;
+}
+@media (max-width: 768px) {
+    :root {
+        --margin: 24px;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+
+    .left-column, .right-column {
+        grid-column: span 12;
+    }
+
+    .right-column {
+        max-height: none;
+        overflow-y: visible;
+    }
+
+    #profilepic {
+        max-width: 150px;
+    }
+}
