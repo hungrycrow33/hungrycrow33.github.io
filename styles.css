@@ -1,175 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
 :root {
-    --margin: 96px;
-    --gutter: 24px;
+  --margin: 96px;
+  --gutter: 24px;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  color: #232933;
+  line-height: 1.5;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 3rem;
+
+  margin-bottom: 40px;
+  /* margin: 0; */
+}
+h2 {
+  font-size: 2.25rem;
+} /* 36px */
+h3 {
+  font-size: 1.75rem;
+  font-weight: 400;
+} /* 28px */
+h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+} /* 24px */
+h5 {
+  font-size: 1.25rem;
+  font-weight: 300;
+} /* 20px */
+h6 {
+  font-size: 1rem;
+} /* 16px */
+
+p {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+li {
+  margin-bottom: 8px;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.secondary {
+  color: #8b9099;
+  font-weight: 300;
+}
+.text-center {
+  text-align: center;
+}
+.vspacer-8 {
+  height: 8px;
+}
+.vspacer-16 {
+  height: 16px;
+}
+.vspacer-24 {
+  height: 24px;
+}
+.vspacer-36 {
+  height: 36px;
+}
+.vspacer-40 {
+  height: 40px;
+}
+.vspacer-48 {
+  height: 48px;
+}
+.vspacer-64 {
+  height: 64px;
+}
+.vspacer-72 {
+  height: 72px;
+}
+.vspacer-80 {
+  height: 80px;
+}
+.mt-0 {
+  margin-top: 0;
+}
+.mt-8 {
+  margin-top: 8px;
+}
+.mb-4 {
+  margin-bottom: 4px;
+}
+.mb-8 {
+  margin-bottom: 8px;
+}
+.mb-16 {
+  margin-bottom: 16px;
+}
+.mb-40 {
+  margin-bottom: 16px;
+}
 .top-nav {
-    position: sticky;
-    top: 0;
-    height: 32px;
-    background-color: #333;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    padding: 0 var(--margin);
-    z-index: 1000;
+  position: sticky;
+  top: 0;
+  height: 32px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0 var(--margin);
+  z-index: 1000;
 }
 
-.navigation-text a{
-    color: white;
-    text-decoration: none;
-    margin-right: 20px;
+.navigation-text a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
 }
-.side-nav{
-    text-align: left;
-    display: flex;
-    flex-direction: column;
+.side-nav {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 .main-content {
-    margin: 48px var(--margin) 0;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: var(--gutter);
+  margin: 48px var(--margin) 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--gutter);
 }
 
 .left-column {
-    grid-column: span 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* This ensures content starts from the top */
-    text-align: center; /* This centers any text content */
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* This ensures content starts from the top */
+  text-align: center; /* This centers any text content */
 }
 
 .right-column {
-    grid-column: span 9;
-    max-height: calc(100vh - 32px - 48px);
-    overflow-y: auto;
+  grid-column: span 9;
+  max-height: calc(100vh - 32px - 48px);
+  overflow-y: auto;
 }
 .card {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    gap: var(--gutter);
-    margin-bottom: 24px; /* Add space between multiple case-containers if needed */
-    
-    border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: var(--gutter);
+  margin-bottom: 24px; /* Add space between multiple case-containers if needed */
+
+  border-radius: 8px;
   transition: 0.3s;
 }
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
 
 .card-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 12px;
-  }
-.case-img{
-    grid-column: span 5;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
 }
-.case-img img{
-    width:100%;
-    max-width: 500px;
-    height: auto;
-    object-fit: cover;
+.case-img {
+  grid-column: span 5;
+}
+.case-img img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
 }
 .case-info {
-    grid-column: span 4;
+  grid-column: span 4;
 }
 
 .badge {
-    display: inline-block;
-    padding: 0.25em 0.6em;
-    font-size: 0.75rem;
-    white-space: nowrap;
-    border-radius: 0.25rem;
-    background-color: #f0f0f0;
-    color: #333;
+  display: inline-block;
+  padding: 0.25em 0.6em;
+  font-size: 1rem;
+  white-space: nowrap;
+  border-radius: 1rem;
+  background-color: #f0f0f0;
+  color: #333;
 }
 #profilepic {
-    width: 100%;
-    height: auto;
-    max-width: 200px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    object-fit: cover; /* This ensures the image covers the area without distortion */
-    object-position: center; /* This centers the image within its container */
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover; /* This ensures the image covers the area without distortion */
+  object-position: center; /* This centers the image within its container */
 }
-.case-content{
-    text-align: center;
+.case-content {
+  text-align: center;
 }
-.case{
-    padding-left: 5rem;
-    padding-right:5rem;
+
+/* project detail */
+.main {
+  display: flex;
+  flex: 1;
+  position: sticky;
+  top: 0;
+}
+
+.main .chapter {
+  max-width: 800px;
+}
+
+.case {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.case-title {
+  display: flex;
+  align-items: center;
+  padding: 0 6rem;
+  gap: 24px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+.case-title img {
+  width: 600px;
+  height: 360px;
+}
+.case-body {
+  width: 80%;
+  overflow-y: auto;
+  padding-left: 1em;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .chapter {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
-
+.sidebar {
+  width: 12%;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  /* Add other styles as needed */
+}
+.sidebar p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+.sidebar a {
+  color: #232933;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+.sidebar a:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
 .title-section {
-    width: 100%;
-    height: 120px;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
 }
-
-.title-section h1 {
-    color: #232933;
-    font-weight: 500;
-    font-size: 2rem;
-    margin: 0;
+.intro {
+  padding: 0 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 72px;
+  margin-bottom: 72px;
 }
-
 .content-section {
-    padding: 24px;
+  padding: 24px;
 }
-
-.content-section h3 {
-    font-weight: 400;
-    margin-top: 0;
+.information-row {
+  display: flex;
+  margin-bottom: 8px;
 }
-
-.content-section p {
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.5;
+.information-row p {
+  margin: 0;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
 }
-
-.pl-12{
-    padding-left: 12px;
+.information-label {
+  display: inline-block;
+  width: 120px; /* Adjust this value as needed */
+  font-weight: 300;
+  color: #46484c;
+  padding-top: 8px;
 }
-.pr-12{
-    padding-right: 12px;
+.content-section .description {
+  color: #333;
+  font-size: 0.75rem;
 }
-.pl-4{
-    padding-left: 4px;
+.pl-12 {
+  padding-left: 12px;
+}
+.pr-12 {
+  padding-right: 12px;
+}
+.pl-4 {
+  padding-left: 4px;
 }
 @media (max-width: 768px) {
-    :root {
-        --margin: 24px;
-    }
+  :root {
+    --margin: 24px;
+  }
 
-    .main-content {
-        grid-template-columns: 1fr;
-    }
+  .main-content {
+    grid-template-columns: 1fr;
+  }
 
-    .left-column, .right-column {
-        grid-column: span 12;
-    }
+  .left-column,
+  .right-column {
+    grid-column: span 12;
+  }
 
-    .right-column {
-        max-height: none;
-        overflow-y: visible;
-    }
+  .right-column {
+    max-height: none;
+    overflow-y: visible;
+  }
 
-    #profilepic {
-        max-width: 150px;
-    }
+  #profilepic {
+    max-width: 150px;
+  }
 }
