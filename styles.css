@@ -235,6 +235,7 @@ li {
 }
 
 .main .chapter {
+  max-width: 800px;
 }
 
 .case {
@@ -267,13 +268,15 @@ li {
   min-height: 40vh;
 }
 .case-body {
+  flex-grow: 1;
   width: 80%;
   overflow-y: auto;
   padding-left: 4em;
-  padding-right: 1rem;
+  padding-right: 5rem;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  justify-content: center;
+  align-items: center;
 }
 .chapter {
   margin-bottom: 8px;
