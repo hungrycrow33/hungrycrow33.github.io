@@ -52,6 +52,10 @@ h6 {
 p {
   font-weight: 400;
   font-size: 1.125rem;
+  max-width: 800px;
+}
+img {
+  max-width: 800px;
 }
 li {
   margin-bottom: 8px;
@@ -231,7 +235,6 @@ li {
 }
 
 .main .chapter {
-  max-width: 800px;
 }
 
 .case {
@@ -346,8 +349,12 @@ li {
 }
 .screen-description {
   display: flex;
-  gap: 40px;
+  gap: 36px;
+  justify-content: space-between;
   margin-bottom: 24px;
+}
+.screen-label {
+  min-width: 40%;
 }
 .screen-description img {
   width: 90%;
