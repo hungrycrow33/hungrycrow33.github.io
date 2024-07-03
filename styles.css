@@ -588,6 +588,9 @@ li {
 }
 
 @media (max-width: 768px) {
+  #case-tile-img2 {
+    display: none;
+  }
   .info-content {
     font-size: 0.875rem;
   }
