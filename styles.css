@@ -375,6 +375,15 @@ li {
 }
 
 @media (max-width: 768px) {
+  .summary-two {
+    flex-direction: column;
+    padding: 0 16px; /* Reduced padding for mobile */
+    gap: 16px; /* Reduced gap for mobile */
+  }
+
+  .summary-col {
+    width: 100%; /* Full width on mobile */
+  }
   .case-title {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -412,8 +421,11 @@ li {
   justify-content: center;
   min-height: 90vh;
 }
+.intro h3 {
+  font-weight: 300;
+}
 .case-body {
-  flex-grow: 1;
+  /* flex-grow: 1; */
   width: 80%;
   max-width: 100%;
   overflow-y: auto;
@@ -458,39 +470,6 @@ li {
 .right-col {
   width: 10%;
   height: 100vh;
-}
-@media (max-width: 768px) {
-  .case-body {
-    width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .sidebar {
-    display: none;
-  }
-
-  .chapter {
-    margin-bottom: 3rem;
-  }
-}
-.title-section {
-  width: 100%;
-  /* height: 160px; */
-  display: flex;
-  align-items: end;
-  /* justify-content: center; */
-  padding-left: 2rem;
-  text-align: center;
-  margin-bottom: 48px;
-  background: linear-gradient(
-    to top,
-    #2a6ae7 0px,
-    /* Start blue at the bottom */ #2a6ae7 8px,
-    /* Keep blue up to 16px */ transparent 8px,
-    /* Transition to transparent at 16px */ transparent 100%
-      /* Keep transparent to the top */
-  );
 }
 
 .content-section {
@@ -583,6 +562,7 @@ li {
 .pl-4 {
   padding-left: 4px;
 }
+
 @media (max-width: 768px) {
   :root {
     --margin: 24px;
@@ -605,4 +585,52 @@ li {
   #profilepic {
     max-width: 150px;
   }
+}
+
+@media (max-width: 768px) {
+  .info-content {
+    font-size: 0.875rem;
+  }
+  .content-section {
+    padding: 0 16px;
+  }
+  .case-body {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sidebar {
+    display: none;
+  }
+  .right-col {
+    display: none;
+  }
+
+  .chapter {
+    margin-bottom: 3rem;
+  }
+  .main .chapter {
+    max-width: 100%;
+  }
+}
+.title-section {
+  width: 93%;
+  /* height: 160px; */
+  display: flex;
+  align-items: end;
+  /* justify-content: center; */
+  padding-left: 2rem;
+  text-align: center;
+  margin-bottom: 48px;
+  background: linear-gradient(
+    to top,
+    #2a6ae7 0px,
+    /* Start blue at the bottom */ #2a6ae7 8px,
+    /* Keep blue up to 16px */ transparent 8px,
+    /* Transition to transparent at 16px */ transparent 100%
+      /* Keep transparent to the top */
+  );
 }
