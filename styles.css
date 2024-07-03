@@ -440,7 +440,8 @@ li {
 }
 .sidebar p {
   margin: 0;
-  font-size: 0.75rem;
+  font-size: 1rem;
+  font-weight: 300;
 }
 .sidebar a {
   color: #232933;
@@ -450,7 +451,7 @@ li {
   transition: all 0.3s ease;
 }
 .sidebar a:hover {
-  background-color: #f0f0f0;
+  background-color: #fff7cc;
   color: #000;
 }
 
