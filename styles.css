@@ -79,11 +79,6 @@ li {
 .text-center {
   text-align: center;
 }
-/* .underlined {
-  border-bottom: 2px solid #ffe454;
-  display: inline-block;
-  line-height: 1.5; /* Adjust this value to control the space between text and underline */
-} */
 
 .vspacer-8 {
   height: 8px;
@@ -195,40 +190,62 @@ li {
   max-height: calc(100vh - 32px - 48px);
   overflow-y: auto;
 }
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .card {
+  padding: 16px 8px;
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   gap: var(--gutter);
-  margin-bottom: 24px; /* Add space between multiple case-containers if needed */
-
-  border-radius: 8px;
+  margin-bottom: 24px;
+  /* border-radius: 8px; */
   transition: 0.3s;
+  overflow: hidden; /* This ensures the content doesn't spill out of rounded corners */
 }
-.card:hover {
+
+.card-link:hover .card {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-header {
-  /* display: flex; */
   align-items: center;
   margin-bottom: 12px;
 }
-.card-header h3{
-  margin:0;
+
+.card-header h3 {
+  margin: 0;
 }
+
 .case-img {
   grid-column: span 5;
+  display: flex;
+  align-items: center;
 }
+
 .case-img img {
   width: 100%;
-  max-width: 500px;
+  /* max-width: 500px; */
   height: auto;
   object-fit: cover;
 }
+.card-body {
+  margin-top: 16px;
+}
 .case-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   grid-column: span 4;
 }
-
+.card-summary {
+  font-size: 0.875rem;
+  color: #232933;
+  line-height: 1.5;
+}
 .badge {
   display: inline-block;
   padding: 0.25em 0.6em;
@@ -238,6 +255,8 @@ li {
   background-color: #f0f0f0;
   color: #333;
 }
+
+/* Remove the existing .btn styles if you had any */
 #profilepic {
   width: 100%;
   height: auto;
