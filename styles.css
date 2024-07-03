@@ -208,7 +208,7 @@ li {
 }
 
 .card-link:hover .card {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-header {
@@ -252,8 +252,8 @@ li {
   font-size: 1rem;
   white-space: nowrap;
   border-radius: 1rem;
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: #2a6ae7;
+  color: #ffffff;
 }
 
 /* Remove the existing .btn styles if you had any */
