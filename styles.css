@@ -209,9 +209,12 @@ li {
 }
 
 .card-header {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   margin-bottom: 12px;
+}
+.card-header h3{
+  margin:0;
 }
 .case-img {
   grid-column: span 5;
