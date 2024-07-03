@@ -588,6 +588,22 @@ li {
 }
 
 @media (max-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-body {
+    margin-top: 8px;
+  }
+  .badge {
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    border-radius: 1rem;
+    background-color: #2a6ae7;
+    color: #ffffff;
+  }
   #case-tile-img2 {
     display: none;
   }
