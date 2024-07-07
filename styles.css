@@ -529,9 +529,57 @@ li {
   height: auto;
   margin-bottom: 20px;
 }
+.screen-description video {
+  width: 90%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
 
 .screen-label {
   width: 100%;
+}
+.interview-questions-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.question-box {
+  background-color: #eef3ff;
+  border-radius: 8px;
+  padding: 20px;
+  position: relative;
+  padding-top: 40px;
+}
+
+.question-title {
+  padding: 5px 15px;
+  border-radius: 20px;
+  text-align: center;
+  margin: -16px auto 10px;
+  width: fit-content;
+}
+
+.question-box ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .interview-questions-container {
+    grid-template-columns: 1fr;
+  }
+
+  .question-box {
+    padding-top: 50px;
+  }
+
+  .question-title {
+    width: 90%;
+    white-space: normal;
+  }
 }
 /* 
 .arrow {
