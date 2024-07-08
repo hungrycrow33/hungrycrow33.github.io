@@ -490,6 +490,7 @@ li {
 }
 .content-section > * {
   width: 100%;
+  max-width: 1000px;
 }
 .summary-content {
   width: 50%;
