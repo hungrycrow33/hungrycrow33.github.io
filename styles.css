@@ -476,7 +476,10 @@ li {
   background-color: #fff7cc;
   color: #000;
 }
-
+.sidebar a.active {
+  background-color: #fff7cc;
+  color: #000;
+}
 .right-col {
   width: 10%;
   height: 100vh;
