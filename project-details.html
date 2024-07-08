@@ -74,9 +74,10 @@
             </div>
 
             <div class="information-col mb-16">
-              <p><strong>Achievements</strong></p>
+              <p><strong>Research Recognition</strong></p>
               <p class="info-content">
-                Accepted for oral presentation at HCI Korea Conference 2024
+                Accepted for oral presentation and publication in the
+                proceedings of HCI Korea Conference 2024
               </p>
             </div>
           </div>
@@ -93,9 +94,9 @@
           <p><a href="#literature-review">Literature Review</a></p>
           <p><a href="#app-features">App Features</a></p>
           <p><a href="#user-research">User Research</a></p>
-          <p><a href="#challenge-2">Challenge 2</a></p>
-          <p><a href="#final-app-flow">Final App Flow</a></p>
-          <p><a href="#result">Result</a></p>
+          <p><a href="#challenge-2">Issue: Shelter</a></p>
+          <p><a href="#final-design">Final Design</a></p>
+          <p><a href="#result">Result: Research Recognition</a></p>
           <p><a href="#what-i-learned">What I Learned</a></p>
         </div>
         <div class="case-body">
@@ -387,15 +388,17 @@
               </ul>
 
               <div class="vspacer-16">&nbsp;</div>
-              <p><strong>Shelter Feature</strong></p>
               <p>
-                We incorporated the 'think of comfortable space' soothing
-                grounding technique into a 'Shelter' feature. This allows users
-                to create their own space and add personal objects from reality
-                using 3D scanning.
+                <strong>Shelter Feature:</strong> Customizable virtual
+                environment
+              </p>
+              <p>
+                We incorporated the
+                <b>'think of comfortable space' soothing grounding technique </b
+                >into a 'Shelter' feature. This allows users to create their own
+                space and add personal objects from reality using 3D scanning.
               </p>
               <ul>
-                <li>'Shelter' feature: Customizable virtual environment</li>
                 <li>
                   Personal Object Integration:
                   <ul>
@@ -413,8 +416,8 @@
                   Cross-Platform Accessibility:
                   <ul>
                     <li>
-                      Mobile app sync: Enables access to personalized content
-                      during real-life emergencies
+                      Mobile app cloud synchronization: Enables access to
+                      personalized content during real-life emergencies
                     </li>
                   </ul>
                 </li>
@@ -550,7 +553,7 @@
               <p>
                 Users need a safe space for grounding, but new users don't have
                 one.
-                <strong
+                <strong class=""
                   >Should users create their shelter before or after starting
                   grounding exercises?</strong
                 >
@@ -593,9 +596,10 @@
               <div class="vspacer-16">&nbsp;</div>
               <h5 class="text-center w-70">
                 <strong>
-                  The initial persona was based solely on <b>demographics,</b>
-                  <br />not on characteristics that would actually inform the
-                  user flow and design decisions.
+                  The initial persona was based solely on
+                  <b class="primary">demographics,</b> <br />not on
+                  characteristics that would actually inform the user flow and
+                  design decisions.
                 </strong>
               </h5>
               <div class="vspacer-16">&nbsp;</div>
@@ -620,7 +624,8 @@
                 Common, majority problem: not familiar, / used to it, anomoly
                 like not like nature (그외의 일반적이지 않은 특징들을 모음)
               </p> -->
-              <h4>Beginner Users (e.g., "Kim Chobo"):</h4>
+              <h4>Beginner Users:</h4>
+              <!-- <p><strong>Kim Chobo</strong></p> -->
               <ul>
                 <li>
                   Lack confidence in applying grounding techniques during crises
@@ -631,7 +636,8 @@
                 src="./images/be_images/user_persona_beginner.png"
                 width="80%"
               />
-              <h4>Experienced Users:</h4>
+              <h4>Advanced Users:</h4>
+              <!-- <p><strong>Park Neungsuk</strong></p> -->
               <ul>
                 <li>
                   Limited opportunities to expand grounding technique repertoire
@@ -677,43 +683,45 @@
           </div>
 
           <div class="vspacer-64">&nbsp;</div>
-          <div class="chapter" id="final-app-flow">
+          <div class="chapter" id="final-design">
             <div class="title-section">
-              <h2>Final App Flow</h2>
+              <h2>Final Design</h2>
             </div>
             <div class="content-section">
-              <p>Following the VR UX UI Guide, made this result</p>
+              <h4>User Flow</h4>
+              <p>
+                Based on the revised personas and adhering to VR UX/UI best
+                practices, I created the following user flow:
+              </p>
 
               <img src="./images/be_images/user_flow.png" width="100%" />
-              <p>
-                <strong>Highlights</strong>
-              </p>
-              <p>Fisrt time user vs Revisiting user flow</p>
-              <p>
-                Make sure that Grounding and Shelter is accessible at the end of
-                both flows
-              </p>
-            </div>
-          </div>
+              <p><strong>Key Features:</strong></p>
+              <ul>
+                <li>
+                  <b>First-time user journey: </b>Includes a comprehensive
+                  'grounding tutorial', introducing grounding techniques,
+                  shelter creation, and personalized routines
+                </li>
+                <li>
+                  <b>Flexibility: </b>Users can freely access both 'Grounding'
+                  and 'Shelter' features at any point in their journey, ensuring
+                  adaptability to individual needs
+                </li>
+              </ul>
+              <h4 class="mt-48">Application Screens</h4>
 
-          <div class="vspacer-64">&nbsp;</div>
-          <div class="chapter" id="result">
-            <div class="title-section">
-              <h2>Result</h2>
-            </div>
-            <div class="content-section">
               <div class="screen-description">
                 <div class="screen-label">
-                  <h4>Start Screen</h4>
+                  <h6 class="primary">Start Screen</h6>
                   <p>Users can select between 'Grounding' or 'My Shelter'</p>
                 </div>
                 <img src="./images/be_images/demo_inital.jpg" />
               </div>
               <div class="screen-description">
                 <div class="screen-label">
-                  <h4>
+                  <h6 class="primary">
                     Select Space Screen <br />(After Selecting 'Grounding')
-                  </h4>
+                  </h6>
                   <p>Users can select spaces to do grounding practice</p>
                 </div>
                 <img src="./images/be_images/final_select_area.png" />
@@ -721,7 +729,7 @@
 
               <div class="screen-description">
                 <div class="screen-label">
-                  <h4>Mental Grounding Screen</h4>
+                  <h6 class="primary">Mental Grounding Screen</h6>
                   <p>
                     Example screen for the 'Memory Game' mental grounding
                     technique, where users need to remember an image and then
@@ -732,7 +740,7 @@
               </div>
               <div class="screen-description">
                 <div class="screen-label">
-                  <h4>Physical Grounding Screen</h4>
+                  <h6 class="primary">Physical Grounding Screen</h6>
                   <p>
                     Prototype showing 'Body Scan' physical grounding, where
                     users focus on sensations in specific body parts as
@@ -740,6 +748,11 @@
                   </p>
                 </div>
                 <img src="./images/be_images/demo_physical.jpg" />
+                <p>
+                  Below is a video demo of physical grounding in VR, with
+                  accessibility functions such as 'show visual guide' and 'turn
+                  on audio guide'.
+                </p>
                 <video autoplay loop muted playsinline>
                   <source
                     src="./images/be_videos/demo_bodyscan.mp4"
@@ -750,7 +763,7 @@
               </div>
               <div class="screen-description">
                 <div class="screen-label">
-                  <h4>Shelter (Soothing Grounding) Features</h4>
+                  <h6 class="primary">Shelter (Soothing Grounding) Features</h6>
                 </div>
                 <div id="shleter-img-video">
                   <p>
@@ -760,6 +773,10 @@
                   </p>
                   <img src="./images/be_images/final_mobile.png" />
                 </div>
+                <p>
+                  Below is video demo of shelter feature, placing favorite
+                  object(3D scanned) in the user's shelter.
+                </p>
                 <video autoplay loop muted playsinline>
                   <source
                     src="./images/be_videos/demo_shelter.mp4"
@@ -768,20 +785,33 @@
                   Your browser does not support the video tag.
                 </video>
               </div>
+            </div>
+          </div>
+
+          <div class="vspacer-64">&nbsp;</div>
+          <div class="chapter" id="result">
+            <div class="title-section">
+              <h2>Result: Research Recognition</h2>
+            </div>
+            <div class="content-section">
               <div class="screen-description">
                 <div class="screen-label">
-                  <h4>Oral Presentation</h4>
+                  <h4>HCI Korea Conference 2024</h4>
+                  <p>
+                    Our work received significant recognition in the field of
+                    Human-Computer Interaction:
+                  </p>
                   <ul>
                     <li>
-                      Our research was accepted for an oral presentation at the
-                      HCI Korea Conference 2024, placing it among the top
-                      submissions of the year.
+                      Accepted for oral presentation at the HCI Korea Conference
+                      2024, placing it among the top submissions of the year
                     </li>
-                    <li>
-                      The paper was subsequently published in the conference
-                      proceedings.
-                    </li>
+                    <li>Published in the official conference proceedings</li>
                   </ul>
+                  <p>
+                    This achievement highlights the significance of our research
+                    and its valuable contribution to the HCI field.
+                  </p>
                 </div>
 
                 <img src="./images/be_images/cover-HCI.png" width="400px" />

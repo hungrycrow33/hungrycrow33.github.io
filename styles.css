@@ -49,7 +49,7 @@ h4 {
 
 h5 {
   font-size: clamp(1.1rem, 1.9vw, 1.6rem);
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: clamp(5px, 1.2vw, 16px);
 }
 
@@ -61,7 +61,7 @@ h6 {
 
 p {
   font-weight: 400;
-  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
   max-width: 800px;
   line-height: 1.5;
 }
@@ -70,7 +70,7 @@ img {
 }
 li {
   margin-bottom: 8px;
-  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
   font-weight: 400;
 }
 .secondary {
@@ -125,6 +125,12 @@ li {
 }
 .mt-8 {
   margin-top: 8px;
+}
+.mt-36 {
+  margin-top: 36px;
+}
+.mt-48 {
+  margin-top: 48px;
 }
 .mt-80 {
   margin-top: 80px;
@@ -456,7 +462,7 @@ li {
 }
 .sidebar p {
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 300;
 }
 .sidebar a {
@@ -493,6 +499,7 @@ li {
   align-items: center;
   gap: clamp(16px, 4vw, 64px);
   margin-bottom: 64px;
+  justify-content: space-between;
 }
 .graphics-grounding-types img {
   width: clamp(24px, 20vw, 640px);
