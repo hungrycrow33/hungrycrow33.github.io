@@ -70,7 +70,7 @@ img {
 }
 li {
   margin-bottom: 8px;
-  font-size: clamp(1rem, 1.1vw, 1.125rem);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
   font-weight: 400;
 }
 .secondary {
@@ -567,7 +567,7 @@ li {
 }
 
 .question-title {
-  padding: 5px 15px;
+  padding: 5px 0px;
   border-radius: 20px;
   text-align: center;
   margin: -16px auto 10px;
