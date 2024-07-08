@@ -535,7 +535,15 @@ li {
   height: auto;
   margin-bottom: 20px;
 }
-
+#shleter-img-video {
+  display: flex;
+}
+#shleter-img-video img {
+  width: 30%;
+}
+#shleter-img-video p {
+  width: 50%;
+}
 .screen-label {
   width: 100%;
 }
