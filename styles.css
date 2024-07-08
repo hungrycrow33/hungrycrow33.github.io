@@ -22,45 +22,46 @@ li {
   color: #232933;
   line-height: 1.5;
 }
-
 h1 {
   font-weight: 600;
-  font-size: clamp(1.6rem, 4vw, 3rem);
+  font-size: clamp(1.6rem, 4vw, 3.5rem);
   max-width: 100%;
   margin-bottom: clamp(8px, 2vw, 40px);
-  /* margin: 0; */
 }
+
 h2 {
-  font-size: clamp(1.5rem, 3vw, 2.25rem);
-  margin-bottom: clamp(8px, 1.5vw, 16px);
+  font-size: clamp(1.4rem, 3.2vw, 2.8rem);
+  margin-bottom: clamp(8px, 1.8vw, 32px);
 }
 
 h3 {
-  font-size: clamp(1.25rem, 2.33vw, 1.75rem);
-  font-weight: 400;
-  margin-bottom: clamp(6px, 1.25vw, 14px);
+  font-size: clamp(1.3rem, 2.6vw, 2.3rem);
+  font-weight: 500;
+  margin-bottom: clamp(7px, 1.6vw, 24px);
 }
 
 h4 {
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  font-weight: 400;
-  margin-bottom: clamp(6px, 1vw, 12px);
+  font-size: clamp(1.2rem, 2.2vw, 1.9rem);
+  font-weight: 500;
+  margin-bottom: clamp(6px, 1.4vw, 20px);
   color: #2a6ae7;
 }
 
 h5 {
-  font-size: clamp(1rem, 1.67vw, 1.25rem);
-  font-weight: 300;
-  margin-bottom: clamp(4px, 0.8vw, 10px);
+  font-size: clamp(1.1rem, 1.9vw, 1.6rem);
+  font-weight: 400;
+  margin-bottom: clamp(5px, 1.2vw, 16px);
 }
 
 h6 {
-  font-size: clamp(0.875rem, 1.33vw, 1rem);
-  margin-bottom: clamp(4px, 0.6vw, 8px);
+  font-size: clamp(1rem, 1.7vw, 1.4rem);
+  font-weight: 400;
+  margin-bottom: clamp(4px, 1vw, 12px);
 }
+
 p {
   font-weight: 400;
-  font-size: clamp(1rem, 1.1vw, 1.125rem);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
   max-width: 800px;
   line-height: 1.5;
 }
@@ -78,6 +79,9 @@ li {
 }
 .text-center {
   text-align: center;
+}
+.primary {
+  color: #2a6ae7;
 }
 
 .vspacer-8 {
@@ -568,6 +572,7 @@ li {
   text-align: center;
   margin: -16px auto 10px;
   width: fit-content;
+  color: #2a6ae7;
 }
 
 .question-box ul {
