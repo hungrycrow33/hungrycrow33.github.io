@@ -597,6 +597,16 @@ li {
   padding: 2px 5px;
   border-radius: 3px;
 }
+#conference-img-text {
+  display: flex;
+  gap: 48px;
+}
+#conference-img-text img {
+  min-width: 240px;
+}
+#conference-img-text p {
+  margin-top: 0;
+}
 @media (max-width: 768px) {
   .interview-questions-container {
     grid-template-columns: 1fr;
