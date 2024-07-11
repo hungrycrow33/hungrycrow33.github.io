@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
 :root {
-  --margin: 96px;
+  --margin: 80px;
   --gutter: 24px;
 }
 
@@ -383,6 +383,12 @@ li {
 .summary-content {
   line-height: 1.5;
 }
+@media (max-width: 1450px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 @media (max-width: 768px) {
   .summary-two {
@@ -503,7 +509,7 @@ li {
   align-items: center;
   gap: clamp(16px, 4vw, 64px);
   margin-bottom: 64px;
-  justify-content: space-between;
+  justify-content: left;
 }
 .graphics-grounding-types img {
   width: clamp(24px, 20vw, 640px);
@@ -582,7 +588,7 @@ li {
   text-align: center;
   margin: -16px auto 10px;
   width: fit-content;
-  color: #2a6ae7;
+  /* color: #2a6ae7; */
 }
 
 .question-box ul {
