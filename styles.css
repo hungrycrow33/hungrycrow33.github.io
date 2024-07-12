@@ -73,15 +73,19 @@ li {
   font-size: clamp(1rem, 1.5vw, 1.125rem);
   font-weight: 400;
 }
-.secondary {
-  color: #8b9099;
-  font-weight: 300;
-}
+
 .text-center {
   text-align: center;
 }
 .primary {
   color: #2a6ae7;
+}
+.secondary {
+  color: #8b9099;
+  font-weight: 300;
+}
+.black {
+  color: #232933;
 }
 
 .vspacer-8 {
