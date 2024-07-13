@@ -44,7 +44,8 @@ h4 {
   font-size: clamp(1.2rem, 2.2vw, 1.9rem);
   font-weight: 300;
   margin-bottom: clamp(6px, 1.4vw, 20px);
-  color: #2a6ae7;
+  /* color: #2a6ae7; */
+  padding: 0.2em 0.5em;
 }
 
 h5 {
@@ -73,7 +74,11 @@ li {
   font-size: clamp(1rem, 1.5vw, 1.125rem);
   font-weight: 400;
 }
-
+mark {
+  color: #2a6ae7;
+  background-color: #fff7cc;
+  padding: 2px 16px;
+}
 .text-center {
   text-align: center;
 }
@@ -86,6 +91,7 @@ li {
 }
 .black {
   color: #232933;
+  background-color: white;
 }
 
 .vspacer-8 {
@@ -519,6 +525,9 @@ li {
   width: clamp(24px, 20vw, 640px);
   height: clamp(24px, 15vw, 640px);
   object-fit: contain;
+}
+.text-top {
+  align-items: start;
 }
 /* #result {
   width: 70vw;
