@@ -44,7 +44,7 @@ h4 {
   font-size: clamp(1.2rem, 2.2vw, 1.9rem);
   font-weight: 300;
   margin-bottom: clamp(6px, 1.4vw, 20px);
-  /* color: #2a6ae7; */
+  color: #2a6ae7;
   /* padding: 0.2em 0.5em;s */
 }
 
