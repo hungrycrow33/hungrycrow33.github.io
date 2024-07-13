@@ -493,7 +493,8 @@ mark {
   color: #000;
 }
 .sidebar a.active {
-  background-color: #e6f1fb;
+  background-color: #fff7cc;
+  /* background-color: #e6f1fb; */
   color: #000;
 }
 .right-col {

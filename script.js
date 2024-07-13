@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   let mybutton = document.getElementById("goToTopBtn");
-  const projectOverview = document.getElementById("project-overview");
+  const projectOverview = document.getElementById("introduction");
   const chapters = document.querySelectorAll(".chapter");
   const sidebarLinks = document.querySelectorAll(".sidebar-link");
   let activeLink = null;
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
           activeLink.style.backgroundColor = "";
         }
         if (correspondingLink) {
-          correspondingLink.style.backgroundColor = "#e6f1fb";
+          correspondingLink.style.backgroundColor = "#fff7cc";
           activeLink = correspondingLink;
         }
         break;
