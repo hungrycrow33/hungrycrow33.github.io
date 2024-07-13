@@ -769,6 +769,7 @@ li {
   /* padding-left: 2rem; */
   text-align: center;
   margin-bottom: 48px;
+  padding-left: 8px;
   background: linear-gradient(
     to top,
     #2a6ae7 0px,
@@ -783,16 +784,17 @@ li {
   bottom: 20px;
   right: 30px;
   z-index: 99;
-  font-size: 16px;
+  font-size: clamp(12px, 1.5vw, 16px);
   border: none;
   outline: none;
+  /* border-color: #2a6ae7; */
   background-color: #2a6ae7;
   color: white;
   cursor: pointer;
-  padding: 15px;
-  border-radius: 50%; /* Makes it circular */
-  width: 100px;
-  height: 100px;
+  padding: 4px;
+  border-radius: 8px; /* Makes it circular */
+  width: clamp(120px, 1.5vw, 120px);
+  height: clamp(64px, 1.5vw, 80px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -801,6 +803,12 @@ li {
 }
 
 #goToTopBtn:hover {
-  background-color: #1a5ad7;
+  background-color: #2a6ae7;
+  color: white;
   transform: scale(1.1); /* Slightly enlarges the button on hover */
+}
+@media (max-width: 768px) {
+  #goToTopBtn {
+    display: none !important;
+  }
 }
