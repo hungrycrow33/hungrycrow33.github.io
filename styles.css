@@ -45,7 +45,7 @@ h4 {
   font-weight: 300;
   margin-bottom: clamp(6px, 1.4vw, 20px);
   /* color: #2a6ae7; */
-  padding: 0.2em 0.5em;
+  /* padding: 0.2em 0.5em;s */
 }
 
 h5 {
@@ -489,11 +489,11 @@ mark {
   transition: all 0.3s ease;
 }
 .sidebar a:hover {
-  background-color: #fff7cc;
+  background-color: #c4def6;
   color: #000;
 }
 .sidebar a.active {
-  background-color: #fff7cc;
+  background-color: #e6f1fb;
   color: #000;
 }
 .right-col {

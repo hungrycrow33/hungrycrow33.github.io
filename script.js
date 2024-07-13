@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
           activeLink.style.backgroundColor = "";
         }
         if (correspondingLink) {
-          correspondingLink.style.backgroundColor = "#fff7cc";
+          correspondingLink.style.backgroundColor = "#e6f1fb";
           activeLink = correspondingLink;
         }
         break;
